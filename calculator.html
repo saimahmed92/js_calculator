@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="D:\html_js\Calculator\calculator.css">
+<script src="D:/html_js/Calculator/calculator.js"></script>
+</head>
+<body>
+  <script>
+    alert("Hello js");
+  </script>
+
+<h1>Calculator Design Using HTML Layout</h1>
+    <div class="container">
+      <div class="header">Calculator</div>
+      <input id = "history" type="text" readonly class="history">
+      <input id = "main" type="text" class="result">
+      <div class="first-row">
+        <input type="button" name="" value="&radic;" class="global">
+        <input type="button" name="" value="(" class="global">
+        <input type="button" name="" value=")" class="global">
+        <input type="button" name="" value="%" class="global">
+      </div>
+      <div class="second-row">
+        <input type="button" onclick="inputvalue(7)" name="" value="7" class="global">
+        <input type="button" onclick="inputvalue(8)" name="" value="8" class="global">
+        <input type="button" onclick="inputvalue(9)" name="" value="9" class="global">
+        <input type="button" onclick="inputoperator('/')" name="" value="/" class="global">
+      </div>
+      <div class="third-row">
+        <input type="button" onclick="inputvalue(4)" name="" value="4" class="global">
+        <input type="button" onclick="inputvalue(5)" name="" value="5" class="global">
+        <input type="button" onclick="inputvalue(6)" name="" value="6" class="global">
+        <input type="button" onclick="inputoperator('X')" name="" value="X" class="global">
+      </div>
+      <div class="fourth-row">
+        <input type="button" onclick="inputvalue(1)" name="" value="1" class="global">
+        <input type="button" onclick="inputvalue(2)" name="" value="2" class="global">
+        <input type="button" onclick="inputvalue(3)" name="" value="3" class="global">
+        <input type="button" onclick="inputoperator('-')" name="" value="-" class="global">
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <input type="button" onclick="inputvalue(0)" name="" value="0" class=" big">
+          <input type="button" onclick="inputvalue('.')" name="" value="." class=" small">
+          <input type="button" name="" value="Del" class=" red small white-text top-margin">
+          <input type="button" onclick="operation()" name="" value="=" class=" green white-text big top-margin">
+        </div>
+        <div class="right">
+          <input type="button" onclick="inputoperator('+')" name="" value="+" class="global grey plus">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
